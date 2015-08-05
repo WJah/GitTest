@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        button2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                System.out.println("button 2 clicked");
+            }
+        });
     }
 
     @Override
