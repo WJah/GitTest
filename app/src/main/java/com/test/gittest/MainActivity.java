@@ -10,8 +10,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button = new Button();
-    private Button button2 = new Button();
+    private Button button;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +22,15 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                System.out.println("clicked");
                 Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                 startActivity(intent);
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                System.out.println("button 2 clicked");
             }
         });
     }
