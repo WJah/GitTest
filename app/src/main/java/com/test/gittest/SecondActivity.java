@@ -4,13 +4,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Switch;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private Switch mSwitch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        mSwitch = (Switch)findViewById(R.id.switch1);
     }
 
     @Override
