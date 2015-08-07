@@ -20,6 +20,7 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
                 System.out.println("switcheds");
                 System.out.println("hello");
+                System.out.println("good");
             }
         });
     }
