@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 System.out.println("switcheds");
+                System.out.println("hello");
             }
         });
     }
